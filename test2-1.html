@@ -1,0 +1,265 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web for Adidas</title>
+    <style>
+.head{
+    background-color: rgb(55, 55, 252);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 30px; 
+}
+nav{
+    height: 70px;
+    margin-bottom: 5px;
+}
+.footer{
+    background-color: gray;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 30px;
+}
+body{
+    background-color: #eee;
+}
+.card:hover{
+background-color:rgb(175, 173, 173);
+}
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <div class="head">
+        welcome to website
+        </div>
+    
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image.PNG" alt="Logo" style="width: 80px;" class="rounded-pill">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+                </ul>
+                <a href="#" class="btn btn-primary d-flex" data-bs-toggle="modal" data-bs-target="#login" style="margin-right: 5px;">
+                    Login
+                </a>
+                <a href="#" class="btn btn-primary d-flex" data-bs-toggle="modal" data-bs-target="#Register" style="margin-right: 5px;">
+                    Register
+                </a>
+                <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">login
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3 row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="form-check" style="margin-right: 260px;">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Remamber me
+                                </label>
+                            </div>
+                        
+                        <button type="button" class="btn btn-primary">login</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="Register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header ">Register
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3 row">
+                                <label for="inputPassword" class="col-sm-2 col-form-label">Username</label>
+                                <div class="col-sm-10">
+                                <input class="form-control" type="text" placeholder="Enter your username" aria-label="default input example">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+                                <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword">
+                                </div>
+                            </div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Country</option>
+                                <option value="1">Damascus</option>
+                                <option value="2">Homs</option>
+                                <option value="3">Allepo</option>
+                            </select>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="form-check" style="margin-right: 230px;">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Remamber me
+                                </label>
+                            </div>
+                        <button type="button" class="btn btn-primary">Register</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            
+            </div>
+            </div>
+        </nav>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#home">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu1">menu1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu2">menu2</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="home" class="container tab-pane active">
+                        <br>
+                        <h3>home</h3>
+                        <p>adidas AG (adidas) designs, manufactures and markets athletic and sports lifestyle products. The company’s product portfolio includes footwear, apparel and accessories such as bags, sun glasses, fitness equipment, and balls. 
+                        </p>
+                    </div>
+                    <div id="menu1" class="container tab-pane fade">
+                        <br>
+                        <h3>menu1</h3>
+                        <p>The company distributes and sells products through own-branded stores, retail stores, wholesale stores, sporting goods chains, buying groups, department stores, lifestyle retail chains, e-tailers, and franchise stores. It also undertakes various product franchises. The company's business operations span across the Americas, Europe, Asia-Pacific, Africa and the Middle East. adidas is headquartered in Herzogenaurach, Germany.</p>
+                    </div>
+                    <div id="menu2" class="container tab-pane fade">
+                        <br>
+                        <h3>menu2</h3>
+                        <p> The company distributes and sells products through own-branded stores, retail stores, wholesale stores, sporting goods chains, buying groups, department stores, lifestyle retail chains, e-tailers, and franchise stores. It also undertakes various product franchises. The company's business operations span across the Americas, Europe, Asia-Pacific, Africa and the Middle East. adidas is headquartered in Herzogenaurach, Germany.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 about-us">
+                <h1>About us</h1>
+                <p>Adidas AG is a German multinational corporation, founded and headquartered in Herzogenaurach, Bavaria, that designs and manufactures shoes, clothing and accessories. It is the largest sportswear manufacturer in Europe, and the second largest in the world, after Nike</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="IMG-20220717-WA0003.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">Shoes for woman</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">buy</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="IMG-20220717-WA0002.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">Shoes for man</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">buy</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="IMG-20220717-WA0004.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">Shoes for man</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">buy</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="IMG-20220717-WA0007.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">Shoes for woman</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">buy</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="IMG-20220717-WA0006.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">Shoes for man</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">buy</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="IMG-20220717-WA0005.jpg" alt="Card image" style="width:100% ">
+                    <div class="card-body">
+                    <h4 class="card-title">Shoes for woman</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">buy</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        this is my footer
+    </div>
+</body>
+</html>
